@@ -19,7 +19,7 @@ fn main() {
 
     let x: i32 = rand::thread_rng().gen_range(0..screen::WIDTH);
     let y: i32 = rand::thread_rng().gen_range(0..screen::HEIGHT);
-    let mut player: Player = Player {x: x, y: y, walk_speed: 3};
+    let mut player: Player = Player {x: x, y: y, walk_speed: 3, health: 5, max_health: 5, materials: 0};
 
     while !rl.window_should_close() {
         let mut d = rl.begin_drawing(&thread);
@@ -32,7 +32,6 @@ fn main() {
 
         d.clear_background(colors::TAURI);
         d.draw_rectangle(player.x, player.y, 24, 24, Color::RED);
-        d.draw_text("Hello, world!", 12, 12, 20, Color::WHITE);
     }
 }
 
