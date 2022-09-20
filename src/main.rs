@@ -14,15 +14,15 @@ fn main() {
     
     rl.set_target_fps(60);
 
-    let mut player: Player = Player {x: 0, y: 0};
+    let mut player: Player = Player {x: 0, y: 0, walk_speed: 3};
 
     while !rl.window_should_close() {
         let mut d = rl.begin_drawing(&thread);
 
-        if d.is_key_down(KEY_RIGHT) { player.x += 2} ;
-        if d.is_key_down(KEY_LEFT) { player.x -= 2} ;
-        if d.is_key_down(KEY_UP) { player.y -= 2} ;
-        if d.is_key_down(KEY_DOWN) { player.y += 2} ;
+        if d.is_key_down(KEY_RIGHT) { player.x += player.walk_speed }
+        if d.is_key_down(KEY_LEFT) { player.x -= player.walk_speed }
+        if d.is_key_down(KEY_UP) { player.y -= player.walk_speed }
+        if d.is_key_down(KEY_DOWN) { player.y += player.walk_speed }
 
 
         d.clear_background(colors::TAURI);
