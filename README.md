@@ -1,8 +1,10 @@
 # ruined
 
-A topdown 2D online multiplayer game written in [Rust](https://www.rust-lang.org/) with [Raylib](https://www.raylib.com/) set in a ruined city.
+a topdown 2D online multiplayer game written in [Rust](https://www.rust-lang.org/) with [Raylib](https://www.raylib.com/) set in a ruined city.
 
-Made in [Rust](https://www.rust-lang.com)
+[view all stable releases of ruined here](https://github.com/Just-a-Unity-Dev/ruined/releases)
+
+made in [Rust](https://www.rust-lang.com)
 
 ## compiling
 
