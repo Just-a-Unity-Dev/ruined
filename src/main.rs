@@ -1,5 +1,8 @@
 use raylib::prelude::consts::KeyboardKey::*;
 use raylib::prelude::{*};
+
+use rand::Rng;
+
 use structs::*;
 use consts::*;
 
@@ -14,7 +17,9 @@ fn main() {
     
     rl.set_target_fps(60);
 
-    let mut player: Player = Player {x: 0, y: 0, walk_speed: 3};
+    let x: i32 = rand::thread_rng().gen_range(0..screen::WIDTH);
+    let y: i32 = rand::thread_rng().gen_range(0..screen::HEIGHT);
+    let mut player: Player = Player {x: x, y: y, walk_speed: 3};
 
     while !rl.window_should_close() {
         let mut d = rl.begin_drawing(&thread);
