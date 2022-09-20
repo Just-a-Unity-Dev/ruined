@@ -13,6 +13,8 @@ Made in [Rust](https://www.rust-lang.com)
 
 ### credits
 
-i learned basic tcod from the [python tutorial](https://rogueliketutorials.com/tutorials/tcod/2019/) and a LOT of the code is from [a tutorial i found online](https://tomassedovic.github.io/roguelike-tutorial/)
+kudos to this nerd for answering my rust questions
 
-kudos to the original libtcod devs for making this amazing lib
+![veritius (1021729274882953217)](.github/nerd.png)
+
+kudos to google and stack overflow for supporting me thru the years
