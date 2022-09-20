@@ -1,6 +1,8 @@
 # ruined
 
-A topdown 2D online multiplayer game written in [Rust](https://www.rust-lang.org/) with [Bevy Engine](https://bevyengine.org/) set in a ruined city.
+A topdown 2D online multiplayer game written in [Rust](https://www.rust-lang.org/) with [Raylib](https://www.raylib.com/) set in a ruined city.
+
+Made in [Rust](https://www.rust-lang.com)
 
 ## compiling
 
